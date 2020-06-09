@@ -1,23 +1,36 @@
 import {add, sub, mul, div} from "./calculations.js";
 
-const firstNumber = Number(prompt("Enter 1st number, plz:"));
-const operator = prompt("enter an operator, plz: +, -, * or / ");
+const buttonPlus = document.getElementById("buttonPlus");
+buttonPlus.addEventListener("click", ()=> add());
 
-const secondNumber = Number(prompt("Enter 2nd number, plz:"));
+const buttonMinus = document.getElementById("buttonMinus");
+buttonMinus.addEventListener("click", ()=> sub());
 
-alert(`The result is: ${calculate(firstNumber, secondNumber, operator)}`);
+const buttonMulti = document.getElementById("buttonMulti");
+buttonMulti.addEventListener("click", ()=> mul());
 
-function calculate(firstNumber, secondNumber, operator) {
-  switch (operator) {
-    case "+":
-      return add(firstNumber, secondNumber);
-    case "-":
-      return sub(firstNumber, secondNumber);
-    case "*":
-      return mul(firstNumber, secondNumber);
-    case "/":
-      return div(firstNumber, secondNumber);
-    default:
-      throw new Error("something went wrong");
-  }
-}
+const buttonDivide = document.getElementById("buttonDivide");
+buttonDivide.addEventListener("click", ()=> div());
+
+
+
+// const operator = prompt("enter an operator, plz: +, -, * or / ");
+
+
+
+// alert(`The result is: ${calculate(firstNumber, secondNumber, operator)}`);
+//
+// function calculate(firstNumber, secondNumber, operator) {
+//   switch (operator) {
+//     case "+":
+//       return add(firstNumber, secondNumber);
+//     case "-":
+//       return sub(firstNumber, secondNumber);
+//     case "*":
+//       return mul(firstNumber, secondNumber);
+//     case "/":
+//       return div(firstNumber, secondNumber);
+//     default:
+//       throw new Error("something went wrong");
+//   }
+// }
