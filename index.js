@@ -12,6 +12,10 @@ buttonMulti.addEventListener("click", ()=> mul());
 const buttonDivide = document.getElementById("buttonDivide");
 buttonDivide.addEventListener("click", ()=> div());
 
+const button = document.getElementById("button");
+button.addEventListener("click", (event)=> console.log(event));
+
+
 
 
 // const operator = prompt("enter an operator, plz: +, -, * or / ");

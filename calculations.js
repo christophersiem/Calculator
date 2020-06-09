@@ -1,23 +1,29 @@
+let firstNumber
+let secondNumber
+
+function askUser() {
+
+  firstNumber = Number(prompt("Enter 1st number, plz:"));
+  secondNumber = Number(prompt("Enter 2nd number, plz:"));
+
+}
+
 export function add() {
-  const firstNumber = Number(prompt("Enter 1st number, plz:"));
-  const secondNumber = Number(prompt("Enter 2nd number, plz:"));
+  askUser();
   alert(firstNumber + secondNumber);
 }
 
 export function sub() {
-  const firstNumber = Number(prompt("Enter 1st number, plz:"));
-  const secondNumber = Number(prompt("Enter 2nd number, plz:"));
-  alert (firstNumber - secondNumber);
+  askUser();
+  alert(firstNumber - secondNumber);
 }
 
 export function mul() {
-  const firstNumber = Number(prompt("Enter 1st number, plz:"));
-  const secondNumber = Number(prompt("Enter 2nd number, plz:"));
-  alert (firstNumber * secondNumber);
+  askUser();
+  alert(firstNumber * secondNumber);
 }
 
 export function div() {
-  const firstNumber = Number(prompt("Enter 1st number, plz:"));
-  const secondNumber = Number(prompt("Enter 2nd number, plz:"));
-  alert (firstNumber / secondNumber);
+  askUser();
+  alert(firstNumber / secondNumber);
 }
